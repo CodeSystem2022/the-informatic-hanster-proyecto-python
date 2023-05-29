@@ -1,0 +1,60 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>S</help_text><element><id>UMLClass</id><coordinates><x>100</x><y>110</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Gestor de alojamiento&gt;&gt;
+
+--
+_-Class guarderia- 
+--
+--funcion gestorResarva
+function_gestor de reserva
+_(check in/ check out )
+_nombre
+_raza(se toma en cuenta para el valor de la estadia)
+_Gestion_comida
+--
+funcion devolver cantidad de dias
+funcion devolver gastos en comida
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>640</x><y>100</y><w>210</w><h>190</h></coordinates><panel_attributes>Class Administracion
+--
+funcion gestion de cobro
+(modo de pago, Mora incumplimiento,voucher )
+--
+funcion seguro canino
+--
+tipo de atencion
+(classic, vip)
+--
+funcion descuento cliente 
+frecuente</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>320</y><w>170</w><h>140</h></coordinates><panel_attributes>// Class Element
+
+BaseDatosGuarderia
+--
+PK id_mascota int
+--
+nombreAnimal varchar
+nombrePropietario varchar
+telefono   varchar
+domicilio varchar
+red social varchar
+
+
+_umletcode=
+drawArc(5,5,26,8,180,180,true) //Parameters (x, y, width, height, start, extent, open)
+fg='#929292'
+bg='#222222'
+drawRectangle(5,9,26,15) //Parameters (x, y, width, height);
+fg='black';
+drawLine(5,9,5,24) //Parameters (x1, y1, x2, y2) 
+drawLine(31,9,31,24) //Parameters (x1, y1, x2, y2) 
+bg='bg'
+drawArc(5,10,26,8,180,180,true) //Parameters (x, y, width, height, start, extent, open)
+drawArc(5,15,26,8,180,180,true) //Parameters (x, y, width, height, start, extent, open)
+bg='#222222'
+drawArc(5,20,26,8,180,180,true) //Parameters (x, y, width, height, start, extent, open)
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>160</y><w>290</w><h>40</h></coordinates><panel_attributes>lt=&lt;.&gt;
+&lt;&lt;Comunicacion&gt;&gt;</panel_attributes><additional_attributes>10;20;270;20</additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>310</y><w>120</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+m1=</panel_attributes><additional_attributes>100;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>290</y><w>120</w><h>170</h></coordinates><panel_attributes>lt=&lt;-
+m1=</panel_attributes><additional_attributes>100;10;10;150</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>70</x><y>20</y><w>810</w><h>570</h></coordinates><panel_attributes>backend 
+--
+bg=red</panel_attributes><additional_attributes></additional_attributes></element></diagram>
